@@ -1,6 +1,17 @@
 # Chinese-Heater-Temperature-Addon
 Addon for chinese diesel heaters to enable better (or different) temperature control
 
+#Modified by SvenP
+#######################
+Function changed to implement frost protection. So that a garage or garden shed can be kept frost-free.
+When the temperature falls below 2 degrees Celsius, the switch-on signal is sent. If the temperature is exceeded, it is switched off again.
+Wiring:
+D2 -> Bus blue
+5V -> + 5V red
+GND -> GND black
+
+D8 -> GND optional inhibit switch
+########################
 This addon is written with the arduino nano as the target but should work with most 5v atmega chips.
 
 it connects directly to the data line between the heater and existing controller using D2 for data and a gnd connection to the heaters negative
